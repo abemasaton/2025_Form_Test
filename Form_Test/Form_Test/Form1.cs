@@ -21,14 +21,23 @@ namespace Form_Test
                 for (j = 0; j < 6; j++)
                 {
                     TestButton testButton = new TestButton();
+
                     testButton.Location = new Point(j * 45 + 10, i * 25 + 10);
+
                     testButton.Size = new Size(40, 20);
+
                     testButton.Text = ("Bton");
+
+                    testButton.MouseDown += hogehogeClick;
+
                     Controls.Add(testButton);
                 }
             }
         }
-
+        private void hogehogeClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("l");
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("t");
