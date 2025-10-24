@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|c:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\c#\u306E\u3084\u3064\\c#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|c:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\c#\u306E\u3084\u3064\\c#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|c:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\c#\u306E\u3084\u3064\\c#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\form_test\\form_test\\testbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\testbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|c:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\c#\u306E\u3084\u3064\\c#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\form_test\\form_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E778D275-F86E-47E1-AE6D-FADA1FA31694}|Form_Test\\Form_Test.csproj|solutionrelative:form_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,16 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Form1.cs",
+              "RelativeDocumentMoniker": "Form_Test\\Form1.cs",
+              "ToolTip": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Form1.cs*",
+              "RelativeToolTip": "Form_Test\\Form1.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA1wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:55:00.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestButton.cs",
+              "DocumentMoniker": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\TestButton.cs",
+              "RelativeDocumentMoniker": "Form_Test\\TestButton.cs",
+              "ToolTip": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\TestButton.cs",
+              "RelativeToolTip": "Form_Test\\TestButton.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T05:07:34.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Program.cs",
+              "RelativeDocumentMoniker": "Form_Test\\Program.cs",
+              "ToolTip": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Program.cs",
+              "RelativeToolTip": "Form_Test\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:46:05.587Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Form1.cs",
               "RelativeDocumentMoniker": "Form_Test\\Form1.cs",
-              "ToolTip": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "Form_Test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "ToolTip": "C:\\\u5B66\u696D\u7528\\\u4F5C\u6210\u30D7\u30ED\u30B0\u30E9\u30E0\\C#\u306E\u3084\u3064\\C#1\u5E74\u5F8C\u671F\u63D0\u51FA\u7269\\Form_Test\\Form_Test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "RelativeToolTip": "Form_Test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T02:50:15.685Z",
               "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
