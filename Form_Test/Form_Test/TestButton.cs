@@ -12,18 +12,33 @@ namespace Form_Test
     // TestButtonを生成
     internal class TestButton : Button
     {
+        private Color _onColor = Color.Cyan;
+
+        private Color _offColor = Color.White;
+
+        private bool _enable;
+        public void SetEnable(bool on)
+        {
+            _enable = on;
+            if (on) BackColor = _onColor;
+            else BackColor = _offColor;
+        }
+
         public TestButton(Point position, Size size, string text)
         {
             Location = position;
             Size = size;
             Text = text;
 
+            SetEnable(false);
+
             Click += ClickEvent;
+            
         }
 
         private void ClickEvent(object sender, EventArgs e)
         {
-            MessageBox.Show("l");
+            SetEnable(!_enable);
         }
     }
 }

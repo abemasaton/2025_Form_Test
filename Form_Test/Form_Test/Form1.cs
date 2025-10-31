@@ -12,24 +12,26 @@ namespace Form_Test
 {
     public partial class Form1 : Form
     {
+        // constをつけると初期化時のみ値を変更可能
+        const int BUTTON_SIZE_X = 60;
+        const int BUTTON_SIZE_Y = 60;
+
+        const int BOARD_SIZE_X = 3;
+        const int BOARD_SIZE_Y = 3;
         public Form1()
         {
             InitializeComponent();
             int i, j;
-            for (i = 0; i < 3; i++)
+            for (i = 0; i < BOARD_SIZE_X; i++)
             {
-                for (j = 0; j < 3; j++)
+                for (j = 0; j < BOARD_SIZE_Y; j++)
                 {
                     // インスタンスの生成
-                    TestButton testButton = new TestButton(new Point(j * 45 + 10, i * 45 + 10), new Size(40, 40), Text = ("Bton"));
+                    TestButton testButton = new TestButton(new Point(j * BUTTON_SIZE_X + 10, i * BUTTON_SIZE_X + 10), new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), Text = ("Bton"));
 
                     Controls.Add(testButton);
                 }
             }
-        }
-        private void hogehogeClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("l");
         }
         private void button1_Click(object sender, EventArgs e)
         {
