@@ -20,15 +20,8 @@ namespace Form_Test
             {
                 for (j = 0; j < 6; j++)
                 {
-                    TestButton testButton = new TestButton();
-
-                    testButton.Location = new Point(j * 45 + 10, i * 25 + 10);
-
-                    testButton.Size = new Size(40, 20);
-
-                    testButton.Text = ("Bton");
-
-                    testButton.MouseDown += hogehogeClick;
+                    // インスタンスの生成
+                    TestButton testButton = new TestButton(new Point(j * 45 + 10, i * 25 + 10), new Size(40, 20), Text = ("Bton"));
 
                     Controls.Add(testButton);
                 }
