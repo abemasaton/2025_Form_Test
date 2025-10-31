@@ -16,12 +16,12 @@ namespace Form_Test
         {
             InitializeComponent();
             int i, j;
-            for (i = 0; i < 4; i++)
+            for (i = 0; i < 3; i++)
             {
-                for (j = 0; j < 6; j++)
+                for (j = 0; j < 3; j++)
                 {
                     // インスタンスの生成
-                    TestButton testButton = new TestButton(new Point(j * 45 + 10, i * 25 + 10), new Size(40, 20), Text = ("Bton"));
+                    TestButton testButton = new TestButton(new Point(j * 45 + 10, i * 45 + 10), new Size(40, 40), Text = ("Bton"));
 
                     Controls.Add(testButton);
                 }
