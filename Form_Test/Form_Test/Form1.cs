@@ -33,7 +33,7 @@ namespace Form_Test
                     // インスタンスの生成
                     TestButton testButton = new TestButton(
                         this,
-                        new Point(j * BUTTON_SIZE_X + 10, i * BUTTON_SIZE_X + 10),
+                        i,j,
                         new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), Text = ("Bton"));
 
                     // 配列にボタンの参照を追加
