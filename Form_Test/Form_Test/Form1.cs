@@ -31,7 +31,9 @@ namespace Form_Test
                 for (j = 0; j < BOARD_SIZE_Y; j++)
                 {
                     // インスタンスの生成
-                    TestButton testButton = new TestButton(new Point(j * BUTTON_SIZE_X + 10, i * BUTTON_SIZE_X + 10),
+                    TestButton testButton = new TestButton(
+                        this,
+                        new Point(j * BUTTON_SIZE_X + 10, i * BUTTON_SIZE_X + 10),
                         new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), Text = ("Bton"));
 
                     // 配列にボタンの参照を追加
@@ -41,6 +43,12 @@ namespace Form_Test
                 }
             }
         }
+        
+        public TestButton GetTestButton(int x, int y)
+        {
+            return _buttonArray[x, y];
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("t");
