@@ -51,12 +51,43 @@ namespace Form_Test
             if (on) BackColor = _onColor;
             else BackColor = _offColor;
         }
-
         
+        public void Toggle()
+        {
+            SetEnable(!_enable);
+        }
 
         private void ClickEvent(object sender, EventArgs e)
         {
-            _form1.GetTestButton(_x, _y).SetEnable(true);
+            // 楽な書き方
+            _form1.GetTestButton(_x - 1, _y)?.Toggle();
+            _form1.GetTestButton(_x, _y - 1)?.Toggle();
+            _form1.GetTestButton(_x, _y)?.Toggle();
+            _form1.GetTestButton(_x + 1, _y)?.Toggle();
+            _form1.GetTestButton(_x, _y + 1)?.Toggle();
+
+            // 別の書き方
+            //for (int i = 0; i < _toggleData.Length; i++)
+            //{
+            //    var data = _toggleData[i];
+            //    var button = _form1.GetTestButton(_x + data[0], _y + data[1]);
+
+            //    if (button != null)
+            //    {
+            //        button.Toggle();
+            //    }
+            //}
         }
+
+
+
+        //private int[][] _toggleData=
+        //{
+        //    new int[]{ 0, 0},
+        //    new int[]{ 1, 0},
+        //    new int[]{-1, 0},
+        //    new int[]{ 0, 1},    
+        //    new int[]{ 0,-1}
+        //};
     }
 }
