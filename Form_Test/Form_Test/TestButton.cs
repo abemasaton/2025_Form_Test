@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Form_Test
 {
@@ -12,6 +13,9 @@ namespace Form_Test
     // TestButtonを生成
     public class TestButton : Button
     {
+        // ランダムのインスタンス?
+        Random random = new Random();
+
         private Color _onColor = Color.Cyan;
 
         private Color _offColor = Color.White;
@@ -24,6 +28,8 @@ namespace Form_Test
         private int _x;
         // 横位置
         private int _y;
+
+        private int[,] ransuu = new int[3,3];
 
         public TestButton(Form1 form1, int x, int y, Size size, string text)
         {
@@ -40,7 +46,16 @@ namespace Form_Test
             // テキストを設定
             Text = text;
 
-            SetEnable(false);
+            Thread.Sleep(10);  // 10ミリ秒待機
+            ransuu[x,y] = random.Next(10);
+            if (random.Next(2) == 0)
+            {
+                SetEnable(false);
+            }
+            else
+            {
+                SetEnable(true);
+            }
 
             Click += ClickEvent;
             
