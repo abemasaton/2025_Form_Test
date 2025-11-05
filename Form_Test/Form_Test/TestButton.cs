@@ -58,7 +58,9 @@ namespace Form_Test
 
             //if (x == 2 && y == 1 || x == 1 && y == 2 || x == 2 && y == 2) SetEnable(true);　
             //else SetEnable(false);  // 検証用の2行
-            Thread.Sleep(10);  // 10ミリ秒待機
+
+            Thread.Sleep(10);  // 10ミリ秒待機　しないと全部同じになる
+
             if (random.Next(2) == 0)  // ランダムに0か1 
             {
                 SetEnable(false);  // 0ならオフ
@@ -94,14 +96,17 @@ namespace Form_Test
 
             // ここから色がそろってるか判定
             int i = 0, j;
-            Color ptr = _form1.GetTestButton(0, 0).BackColor; ;
-            bool same = true;
-            while (i < tate && same)
+
+            Color ptr = _form1.GetTestButton(0, 0).BackColor;　// 1番左上の色をptrに格納
+
+            bool same = true; // 正誤判定変数
+
+            while (i < tate && same) // falseになったらすぐぬける
             {
                 for(j = 0; j < yoko; j++)
                 {
                     // MessageBox.Show("i"); // 検証用noメッセージ
-                    if (ptr != _form1.GetTestButton(i, j).BackColor)
+                    if (ptr != _form1.GetTestButton(i, j).BackColor) // 1番左上の色と比較
                     {
                         same = false;
                         break;
@@ -109,8 +114,10 @@ namespace Form_Test
                 }
                 i++;
             }
-            Thread.Sleep(1);  // これがないと検証で変になる
-            if (same == true)
+
+            Thread.Sleep(1);  // これがないと検証で変になる(1ミリ秒待つ)
+
+            if (same == true)　// 色が全部そろった場合の処理
             {
                 MessageBox.Show("君の勝ちだ");
             }
