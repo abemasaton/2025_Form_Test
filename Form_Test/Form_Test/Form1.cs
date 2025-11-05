@@ -34,6 +34,7 @@ namespace Form_Test
                     TestButton testButton = new TestButton(
                         this,
                         i,j,
+                        BOARD_SIZE_X,BOARD_SIZE_Y,
                         new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), Text = ("Bton"));
 
                     // 配列にボタンの参照を追加
