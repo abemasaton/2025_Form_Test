@@ -59,7 +59,7 @@ namespace Form_Test
             //if (x == 2 && y == 1 || x == 1 && y == 2 || x == 2 && y == 2) SetEnable(true);　
             //else SetEnable(false);  // 検証用の2行
 
-            Thread.Sleep(10);  // 10ミリ秒待機　しないと全部同じになる
+            Thread.Sleep(1);  // 1ミリ秒待機　しないと全部同じになった
 
             if (random.Next(2) == 0)  // ランダムに0か1 
             {
@@ -83,6 +83,19 @@ namespace Form_Test
         public void Toggle()
         {
             SetEnable(!_enable);
+        }
+
+        public void ReSetEnable(int i , int j) // 繰り返し文に対応して背景色を再設定
+        {
+            Thread.Sleep(1);  // 1ミリ秒待機
+            if (random.Next(2) == 0)  // ランダムに0か1 
+            {
+                _form1.GetTestButton(i, j).SetEnable(false);  // 0ならオフ
+            }
+            else
+            {
+                _form1.GetTestButton(i, j).SetEnable(true);  // 1ならオン
+            }
         }
 
         private void ClickEvent(object sender, EventArgs e)
@@ -120,11 +133,16 @@ namespace Form_Test
             if (same == true)　// 色が全部そろった場合の処理
             {
                 MessageBox.Show("君の勝ちだ");
+
+                // ここから盤面の再配置
+                for (i = 0; i < tate; i++)
+                {
+                    for (j = 0; j < yoko; j++)
+                    {
+                        ReSetEnable(i, j);
+                    }
+                }
             }
-
-
-
-
 
             // 十字色変換の別の書き方part1
             //for (int i = 0; i < _toggleData.Length; i++)
