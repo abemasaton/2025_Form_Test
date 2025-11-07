@@ -25,6 +25,10 @@ namespace Form_Test
             InitializeComponent();
             _buttonArray = new TestButton[BOARD_SIZE_X, BOARD_SIZE_Y];
 
+            this.Height = ((BUTTON_SIZE_X　+ 10) * BOARD_SIZE_X + 30);  // フォームの縦
+
+            this.Width = ((BUTTON_SIZE_Y + 10) * BOARD_SIZE_Y + 10);  // フォームの横幅
+
             int i, j;
             for (i = 0; i < BOARD_SIZE_X; i++)
             {
